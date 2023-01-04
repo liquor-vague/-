@@ -1,35 +1,35 @@
 //p1540
-//¶ÓÁÐ
+//é˜Ÿåˆ—
 #include<iostream>
-#define max 1005 //¶ÓÁÐ´óÐ¡ 
+#define max 1005 //é˜Ÿåˆ—å¤§å° 
 using namespace std;
-int Hash[max]= {0};//±êÖ¾Êý×é 
+int Hash[max]= {0};//æ ‡å¿—æ•°ç»„ 
 struct queue {
 	int data[max];
 	int head,tail;
-	//³õÊ¼»¯
+	//åˆå§‹åŒ–
 	void initialization() {
 		head=tail=0;
 	};
 
-	//Ñ¹Èë
+	//åŽ‹å…¥
 	void push(int x) {
 		data[tail]=x;
 		tail=(tail+1)%max;
 	
 	};
-	//µ¯³ö
+	//å¼¹å‡º
 	void pop() {
-		if(head==tail)return;//¶ÓÁÐ¿Õ
+		if(head==tail)return;//é˜Ÿåˆ—ç©º
 		int tmp=data[head];
-		Hash[tmp]=0;		//²éÕÒÇåÁã 
+		Hash[tmp]=0;		//æŸ¥æ‰¾æ¸…é›¶ 
 		head=head+1;
 	};
-	//»Øµ½¶ÓÍ·
+	//å›žåˆ°é˜Ÿå¤´
 	int front() {
 		return data[head];
 	};
-	//¶ÓÁÐ³¤¶È
+	//é˜Ÿåˆ—é•¿åº¦
 	int size() {
 		return (tail-head+max)%max;
 	};
@@ -43,11 +43,11 @@ int main() {
 	while(n--) {
 		int word;
 		cin>>word;
-		if(Hash[word]==0) { //ÉÐÎ´´æÈë
+		if(Hash[word]==0) { //å°šæœªå­˜å…¥
 			++calls;
 			q.push(word);
 			Hash[word]=1;
-			while(q.size()>m) {//¶ÓÁÐÒÑÂú
+			while(q.size()>m) {//é˜Ÿåˆ—å·²æ»¡
 				q.pop();
 			};
 		};
