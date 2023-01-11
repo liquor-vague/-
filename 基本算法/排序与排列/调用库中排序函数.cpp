@@ -1,4 +1,4 @@
-//Âå¹Èp1093 
+//æ´›è°·p1093 
 #include<bits/stdc++.h>
 using namespace std;
 struct stu {
@@ -30,7 +30,7 @@ int main(){
 		st[i].sum=st[i].c+st[i].m+st[i].e;
 	};
 	
-	sort(st+1,st+1+n,cmp);//ÓÃcmp()º¯ÊıÅÅĞò
+	sort(st+1,st+1+n,cmp);//Ã“Ãƒcmp()ÂºÂ¯ÃŠÃ½Ã…Ã…ÃÃ²
 	
 	for(int i=1; i<6; i++)printf("%d %d\n",st[i].id,st[i].sum);
 	return 0;
