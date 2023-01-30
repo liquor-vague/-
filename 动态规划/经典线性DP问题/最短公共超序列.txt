@@ -1,0 +1,9 @@
+问题描述：
+给定两个字符串str1和str2，找一个最短的字符串，使str1和str2是它的子序列
+
+sample input:
+AGGTAB
+GXTXAYB
+
+sample output:
+AGXGTXAYB
