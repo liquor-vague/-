@@ -1,5 +1,5 @@
 //luogu p4018
-//°ÍÊ²ÓÎÏ· 
+//å·´ä»€æ¸¸æˆ
 #include <bits/stdc++.h>
 using namespace std;
 const int N =1e5+5;
